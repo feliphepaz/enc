@@ -43,6 +43,8 @@ const isMenuOpen = ref(false);
   width: 100%;
   background: $yellow;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: -$header-height-desktop;
+  z-index: 99;
 
   &__nav {
     display: flex;
@@ -102,6 +104,7 @@ const isMenuOpen = ref(false);
 
   @include mobile {
     position: relative;
+    margin-top: 0;
 
     &__nav {
       &__menu-mobile {
@@ -114,7 +117,7 @@ const isMenuOpen = ref(false);
 
       &__menu {
         position: absolute;
-        top: $header-height;
+        top: $header-height-mobile;
         display: block;
         max-height: 0;
         background: $yellow;
