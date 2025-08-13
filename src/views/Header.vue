@@ -39,7 +39,10 @@ const isMenuOpen = ref(false);
 
 <style scoped lang="scss">
 .header {
+  position: fixed;
+  width: 100%;
   background: $yellow;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 
   &__nav {
     display: flex;
