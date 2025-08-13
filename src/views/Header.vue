@@ -24,9 +24,7 @@
         </li>
       </ul>
 
-      <a href="#" class="header__nav__menu__item__link -highlight">
-        Participe
-      </a>
+      <a href="#" class="header__nav__cta">Participe</a>
     </nav>
   </header>
 </template>
@@ -68,13 +66,6 @@ const isMenuOpen = ref(false);
           font-size: 16px;
           color: $blue;
           padding: 20px 0;
-          text-align: center;
-
-          &.-highlight {
-            background-color: $blue;
-            color: $yellow;
-            padding: 20px 10px;
-          }
 
           &__line {
             content: "";
@@ -94,6 +85,15 @@ const isMenuOpen = ref(false);
           }
         }
       }
+    }
+
+    &__cta {
+      background-color: $blue;
+      color: $yellow;
+      padding: 20px 10px;
+      font-family: $font-expanded;
+      text-transform: uppercase;
+      font-size: 16px;
     }
   }
 
