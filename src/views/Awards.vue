@@ -49,7 +49,7 @@
 .awards {
   background: url("../assets/awards/bg-premios.webp") no-repeat center center;
   background-size: cover;
-  padding: 40px 0;
+  padding: 40px 0 120px 0;
   position: relative;
 
   &__balloon {
