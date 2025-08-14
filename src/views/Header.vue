@@ -19,7 +19,7 @@
         >
           <a class="header__nav__menu__item__link" href="#">
             {{ item }}
-            <hr class="header__nav__menu__item__link__line" />
+            <hr />
           </a>
         </li>
       </ul>
@@ -72,7 +72,7 @@ const isMenuOpen = ref(false);
           color: $blue;
           padding: 20px 0;
 
-          &__line {
+          hr {
             content: "";
             display: block;
             margin: 0;
@@ -84,7 +84,7 @@ const isMenuOpen = ref(false);
           }
 
           &:hover {
-            .header__nav__menu__item__link__line {
+            hr {
               width: 100%;
             }
           }
@@ -103,7 +103,6 @@ const isMenuOpen = ref(false);
   }
 
   @include mobile {
-    position: relative;
     margin-top: 0;
 
     &__nav {
@@ -127,6 +126,10 @@ const isMenuOpen = ref(false);
         &--open {
           max-height: 500px;
         }
+      }
+
+      &__cta {
+        padding: 25px 10px;
       }
     }
   }
