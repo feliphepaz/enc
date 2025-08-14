@@ -59,11 +59,13 @@
     &.-left {
       top: -120px;
       left: 0;
+      animation: floatBalloonLeft 2s ease-in-out infinite;
     }
 
     &.-right {
       bottom: 10px;
       right: 10px;
+      animation: floatBalloonRight 6s ease-in-out infinite;
     }
   }
 
@@ -111,6 +113,30 @@
     &__items {
       grid-template-columns: 1fr;
     }
+  }
+}
+
+@keyframes floatBalloonLeft {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes floatBalloonRight {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 </style>
