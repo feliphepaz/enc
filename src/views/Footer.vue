@@ -105,6 +105,7 @@ const socialNetworks = [
 
     hr {
       width: 100%;
+      margin: 0;
       border: none;
       height: 2px;
       background: $white;
