@@ -1,5 +1,5 @@
 <template>
-  <section class="home">
+  <section class="home" id="home">
     <img
       class="home__logo-promo"
       src="../assets/home/logo-promo.webp"

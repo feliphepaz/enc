@@ -1,5 +1,5 @@
 <template>
-  <section class="awards">
+  <section class="awards" id="premios">
     <img
       src="../assets/awards/premios-balao-1.webp"
       alt="Balão da seção de prêmios"

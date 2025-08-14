@@ -17,10 +17,10 @@
           class="header__nav__menu__item"
           :key="index"
         >
-          <a class="header__nav__menu__item__link" href="#">
-            {{ item }}
+          <RouterLink class="header__nav__menu__item__link" :to="item.path">
+            {{ item.name }}
             <hr />
-          </a>
+          </RouterLink>
         </li>
       </ul>
 
@@ -32,7 +32,24 @@
 <script setup>
 import { ref } from "vue";
 
-const menuItems = ["Home", "Prêmios", "Como participar", "Ranking"];
+const menuItems = [
+  {
+    name: "Home",
+    path: "/#home",
+  },
+  {
+    name: "Prêmios",
+    path: "/#premios",
+  },
+  {
+    name: "Como participar",
+    path: "/#como-participar",
+  },
+  {
+    name: "Ranking",
+    path: "/#ranking",
+  },
+];
 
 const isMenuOpen = ref(false);
 </script>
