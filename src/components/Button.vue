@@ -1,5 +1,5 @@
 <template>
-  <RouterLink class="button" :href="link">{{ title }}</RouterLink>
+  <RouterLink class="button" :to="link">{{ title }}</RouterLink>
 </template>
 
 <script setup>

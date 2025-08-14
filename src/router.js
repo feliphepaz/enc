@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "./views/Home.vue";
 import Awards from "./views/Awards.vue";
+import HowToParticipate from "./views/HowToParticipate.vue";
 
 const routes = [
   { path: "/", component: Home },
   { path: "/#premios", component: Awards },
+  { path: "/#como-participar", component: HowToParticipate },
 ];
 
 const router = createRouter({

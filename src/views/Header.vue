@@ -8,17 +8,14 @@
         <img src="../assets/menu-mobile.png" alt="Menu mobile" />
       </button>
 
-      <ul
-        class="header__nav__menu"
-        :class="{ 'header__nav__menu--open': isMenuOpen }"
-      >
+      <ul class="header__nav__menu" :class="{ '-open': isMenuOpen }">
         <li
-          v-for="(item, index) in menuItems"
+          v-for="(link, index) in headerLinks"
           class="header__nav__menu__item"
           :key="index"
         >
-          <RouterLink class="header__nav__menu__item__link" :to="item.path">
-            {{ item.name }}
+          <RouterLink :to="link.path">
+            {{ link.name }}
             <hr />
           </RouterLink>
         </li>
@@ -32,23 +29,11 @@
 <script setup>
 import { ref } from "vue";
 
-const menuItems = [
-  {
-    name: "Home",
-    path: "/#home",
-  },
-  {
-    name: "Prêmios",
-    path: "/#premios",
-  },
-  {
-    name: "Como participar",
-    path: "/#como-participar",
-  },
-  {
-    name: "Ranking",
-    path: "/#ranking",
-  },
+const headerLinks = [
+  { name: "Home", path: "/#home" },
+  { name: "Prêmios", path: "/#premios" },
+  { name: "Como participar", path: "/#como-participar" },
+  { name: "Ranking", path: "/#ranking" },
 ];
 
 const isMenuOpen = ref(false);
@@ -82,7 +67,7 @@ const isMenuOpen = ref(false);
       width: 100%;
 
       &__item {
-        &__link {
+        a {
           font-family: $font-expanded;
           text-transform: uppercase;
           font-size: 16px;
@@ -96,7 +81,7 @@ const isMenuOpen = ref(false);
             border: none;
             width: 0%;
             height: 2px;
-            background-color: $blue;
+            background: $blue;
             transition: width 0.2s ease;
           }
 
@@ -110,7 +95,7 @@ const isMenuOpen = ref(false);
     }
 
     &__cta {
-      background-color: $blue;
+      background: $blue;
       color: $yellow;
       padding: 20px 10px;
       font-family: $font-expanded;
@@ -140,7 +125,7 @@ const isMenuOpen = ref(false);
         margin-left: -20px;
         padding-left: 20px;
 
-        &--open {
+        &.-open {
           max-height: 500px;
         }
       }

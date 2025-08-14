@@ -1,9 +1,5 @@
-<script setup lang="ts">
-import { RouterLink } from "vue-router";
-</script>
-
 <template>
-  <section class="how-to-participate">
+  <section class="how-to-participate" id="como-participar">
     <img
       class="how-to-participate__title"
       src="../assets/how-to-participate/titulo-como-jogar.webp"
@@ -27,7 +23,7 @@ import { RouterLink } from "vue-router";
         </div>
 
         <div class="how-to-participate__items__inner__item">
-          <RouterLink to="/participe">
+          <RouterLink to="/">
             <img
               src="../assets/how-to-participate/como-participar-3.webp"
               alt="Passo 3: Inscreva-se"

@@ -5,7 +5,7 @@
       concorra a prêmios especiais
     </h1>
 
-    <Button title="Participe" link="/participe" />
+    <Button title="Participe" link="/" />
   </section>
 </template>
 
@@ -15,7 +15,7 @@ import Button from "@/components/Button.vue";
 
 <style scoped lang="scss">
 .call-to-action {
-  background: #ffffff;
+  background: $white;
   text-align: center;
   padding: 40px 20px;
 

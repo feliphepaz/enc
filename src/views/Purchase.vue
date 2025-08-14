@@ -28,7 +28,7 @@ import Button from "@/components/Button.vue";
 
 <style scoped lang="scss">
 .purchase {
-  background: #ffffff;
+  background: $white;
   display: flex;
   justify-content: center;
   align-items: center;

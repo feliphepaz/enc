@@ -13,10 +13,10 @@
           v-for="(link, index) in footerLinks"
           :key="index"
         >
-          <a :href="link.url">
+          <RouterLink :to="link.url">
             {{ link.name }}
             <hr />
-          </a>
+          </RouterLink>
         </li>
       </ul>
     </nav>
@@ -35,7 +35,7 @@
       </ul>
     </nav>
 
-    <p class="footer__text">
+    <p class="footer__copyright">
       Esta promoção não é patrocinada, endossada nem administrada pela Epic
       Games, Inc.
       <br /><br />
@@ -63,14 +63,8 @@
 
 <script setup>
 const footerLinks = [
-  {
-    name: "Dúvidas",
-    url: "/",
-  },
-  {
-    name: "Regulamento",
-    url: "/",
-  },
+  { name: "Dúvidas", url: "/" },
+  { name: "Regulamento", url: "/" },
 ];
 
 const socialNetworks = [
@@ -113,7 +107,7 @@ const socialNetworks = [
       width: 100%;
       border: none;
       height: 2px;
-      background: #ffffff;
+      background: $white;
     }
   }
 
@@ -127,7 +121,7 @@ const socialNetworks = [
 
       &__item {
         a {
-          color: #ffffff;
+          color: $white;
           font-family: $font-condensed;
           letter-spacing: 0.4px;
           text-transform: uppercase;
@@ -140,7 +134,7 @@ const socialNetworks = [
             border: none;
             width: 0%;
             height: 2px;
-            background: #ffffff;
+            background: $white;
             transition: width 0.2s ease;
           }
 
@@ -167,8 +161,8 @@ const socialNetworks = [
     }
   }
 
-  &__text {
-    color: #ffffff;
+  &__copyright {
+    color: $white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     text-align: center;
