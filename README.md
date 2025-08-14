@@ -1,29 +1,19 @@
-# enc
+# ENC
 
-This template should help get you started developing with Vue 3 in Vite.
+Projeto teste de front-end para a ENC.
 
-## Recommended IDE Setup
+Optei por utilizar somente SASS em vez do Bootstrap, pois não vi necessidade de incluir um framework tão robusto neste projeto. Costumo desenvolver meus layouts utilizando a abordagem mobile first com min-width, mas, como só havia a versão desktop da página como referência, achei melhor iniciar o desenvolvimento por ela. Ainda assim, deixei tudo responsivo, funcionando corretamente até nas menores telas (inclusive no Galaxy Z Fold 5).
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+É isso! Espero que gostem ☺️
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
+Para instalar todas as dependências:
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
+Para rodar o projeto:
 ```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
