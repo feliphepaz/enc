@@ -1,9 +1,10 @@
 <template>
-  <a class="button" :href="link">{{ title }}</a>
+  <RouterLink class="button" :href="link">{{ title }}</RouterLink>
 </template>
 
 <script setup>
 import { defineProps } from "vue";
+import { RouterLink } from "vue-router";
 
 defineProps({
   title: {

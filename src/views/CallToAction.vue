@@ -5,7 +5,7 @@
       concorra a prêmios especiais
     </h1>
 
-    <Button title="Participe" link="#" />
+    <Button title="Participe" link="/participe" />
   </section>
 </template>
 
