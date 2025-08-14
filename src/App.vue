@@ -5,6 +5,7 @@
   <Awards />
   <HowToParticipate />
   <Purchase />
+  <Footer />
 </template>
 
 <script setup>
@@ -14,4 +15,5 @@ import CallToAction from "./views/CallToAction.vue";
 import Awards from "./views/Awards.vue";
 import HowToParticipate from "./views/HowToParticipate.vue";
 import Purchase from "./views/Purchase.vue";
+import Footer from "./views/Footer.vue";
 </script>
